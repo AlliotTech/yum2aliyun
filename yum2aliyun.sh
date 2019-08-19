@@ -58,7 +58,7 @@ systemVersion(){
 # judge runing user
 if [ $UID -ne 0 ];then 
 	echo -e "[${red}please runing this script by root user${nc}"
-	exit 
+	exit 1
 fi
 
 cat << EOF
